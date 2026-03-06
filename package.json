@@ -1,0 +1,64 @@
+{
+  "name": "yuri-kiss-muif",
+  "version": "0.1.0",
+  "description": "Simple library/framework by Miyo Sho.",
+  "keywords": [
+    "ui",
+    "library",
+    "framework"
+  ],
+  "author": {
+    "email": "yri5@duck.com",
+    "name": "Miyo Sho",
+    "url": "https://github.com/yuri-kiss/"
+  },
+  "homepage": "https://github.com/yuri-kiss/muif/#README-v0",
+  "readme": "https://github.com/yuri-kiss/muif/#README-v0",
+  "bugs": {
+    "url": "https://github.com/yuri-kiss/muif/issues/"
+  },
+  "repository": {
+    "directory": "/",
+    "type": "git",
+    "url": "git+https://github.com/yuri-kiss/muif.git"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "yarn",
+      "onFail": "download"
+    },
+    "runtime": {
+      "name": "node",
+      "onFail": "warn",
+      "version": ">=22.12.0"
+    }
+  },
+  "license": "LGPL-2.1-only",
+  "type": "commonjs",
+  "main": "./src/pure.cjs",
+  "browser": "./dist/browser.umd.js",
+  "scripts": {
+    "test": "cross-env mocha",
+    "build": "cross-env NODE_ENV=\"development\" && echo No development build has been setup. >&2 && exit 1",
+    "build:prod": "cross-env NODE_ENV=\"production\" && echo No production build has been setup. >&2 && exit 1",
+    "build:dev": "yarn run build"
+  },
+  "sideeffects": [],
+  "peerDependencies": {
+    "core-js-pure": "^3.48.0"
+  },
+  "devDependencies": {
+    "chai": "^6.2.2",
+    "chai-as-promised": "npm:chai-as-promised",
+    "core-js-pure": "^3.48.0",
+    "cross-env": "^10.1.0",
+    "jsdom": "^28.1.0",
+    "mocha": "^11.7.5",
+    "ncu": "^0.2.1",
+    "raw-loader": "npm:raw-loader",
+    "yarn": "^1.22.22"
+  },
+  "dependencies": {
+    "google-closure-library": "npm:google-closure-library"
+  }
+}
